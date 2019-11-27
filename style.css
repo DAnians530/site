@@ -1,0 +1,207 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(12, 0, 0);
+}
+
+ /*HEADER  */
+.item-a {
+    grid-area: header;
+    background-color: rgb(12, 0, 0);
+    border-bottom: 2px solid rgb(124, 0, 0);
+    border-radius: 2px;
+    position: relative;
+  }
+
+    .logo {
+        position: relative;
+        padding: 25px;
+    }
+
+    .logo-link, .logo-link:visited {
+        color: rgb(211, 211, 211);
+        font-style: bold;
+        text-align: center;
+        text-decoration: none;
+        border-style: solid;
+        border-color: rgb(124, 0, 0);
+        padding: 5px;
+        border-width: 2px;
+        transition: 1s;
+        font-size: 2em;
+    }
+
+    .logo-link:hover, .logo-link:focus, .logo-link:active {
+        color: rgb(124, 0, 0);
+        -webkit-text-fill-color: rgb(124, 0, 0); /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(211, 211, 211);
+        border-style: solid;
+        border-color: rgb(211, 211, 211);
+        border-width: 5px;
+        font-size: 2.2em;
+    }
+
+    .main-text {
+        padding: 25px;
+    }
+
+/* END OF HEADER SECTION */
+
+/* START OF MAIN SECTION */
+.item-b {
+    grid-area: main;
+    background-color: rgb(12, 0, 0);
+  }
+
+.main-header {
+    padding: 0 50px 0 50px;
+    color: rgb(211, 211, 211);
+    font-size: 1.75em;
+    border-radius: 2px;
+}
+
+.main-text {
+    padding: 0 5em 0 5em;
+    margin: 1em 0 0 0;
+    display: inline-block;
+    color: rgb(192, 192, 192);
+    font-size: 1.25em;
+}
+
+/* END OF MAIN SECTION */
+
+.line {
+    background-color: rgb(124, 0, 0);
+    height: 2px;
+    width: 75vw;
+    display: block;
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* START OF "BLOG" SECTION */
+.item-c {
+    grid-area: blog;
+  }
+
+
+    .blog-header {
+        color: rgb(211, 211, 211);
+        font-size: 1em;
+        background-color: rgb(124, 0, 0);
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 2px;
+        text-align: center;
+        margin: 5em auto auto auto;
+        width: 25%;
+    }
+
+    .blog-content {
+        display: flex;
+        padding: 25px 0 0 0;
+        justify-content: center;
+        width: 100%;      
+    }
+
+    .blog-item {
+        padding: 25px 25px 0 30px;
+        margin: 10px 25px 0 25px;
+        background-color: rgb(124, 0, 0);
+        border: 2px dashed rgb(255, 255, 255);
+        border-radius: 2px;
+        color: rgb(192, 192, 192);
+        font-size: 1.25em;
+        width: 30vw;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .blog-link, .blog-link:visited {
+        color: rgb(211, 211, 211);
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .blog-link:hover, .blog-link:active {
+        text-decoration: underline;
+        opacity: 0.9;
+        font-size: 1.005em;
+    }
+
+    .blog-link:focus {
+        outline: 2px solid rgb(211, 211, 211);
+        opacity: 0.9;
+    }
+
+/* END OF BLOG SECTION */
+
+/* START OF FOOTER */
+.item-d {
+    grid-area: footer;
+    background-color: rgb(12, 0, 0);
+  }
+
+    .footer {
+        color: rgb(211, 211, 211);
+        border-top: 2px solid rgb(124, 0, 0);
+        border-radius: 2px;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .contacts {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        color: rgb(211, 211, 211);
+    }
+
+    .contact-link, .contact-link:visited {
+        color: rgb(211, 211, 211);
+        text-decoration: none;
+    }
+
+    .contact-link:hover, .contact-link:active {
+        text-decoration: underline;
+    }
+
+    .contact-link:focus {
+        outline: 2px solid rgb(211, 211, 211);
+    }
+
+    .contact-icons, .contact-icons:visited {
+        width: 5em;
+        height: 5em;
+        fill: rgb(124, 0, 0);
+        padding: 0 5vw 0 5vw;
+        transition: .3s;
+    }
+
+    .contact-icons:hover, .contact-icons:focus, .contact-icons:active {
+        width: 6em;
+        height: 6em;
+    }
+
+.container {
+    display: grid;
+    margin: 0 1em 1em 1em;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas: 
+      "header"
+      "main"
+      "blog"
+      "footer";
+  }
+
+/* END OF FOOTER */
+
